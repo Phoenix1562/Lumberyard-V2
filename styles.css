@@ -1,0 +1,127 @@
+/* Custom styles for Lumberyard Brewery & Events */
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #f3e8d8;
+    color: #2c1e0f;
+}
+
+.wood-texture {
+    background-image: url('https://via.placeholder.com/1920x1080.png?text=Wood+Texture');
+    background-size: cover;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4a762;
+    transform: translateY(-2px);
+}
+
+.beer-card {
+    transition: all 0.3s ease;
+}
+
+.beer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+}
+
+/* Custom button styles */
+.btn-primary {
+    background-color: #d4a762;
+    color: #2c1e0f;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c39555;
+    transform: translateY(-2px);
+}
+
+/* Section styles */
+section {
+    padding: 4rem 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2c1e0f;
+    color: #f3e8d8;
+}
+
+footer a {
+    color: #d4a762;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f3e8d8;
+}
+
+/* Hero section parallax effect */
+#home {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Form styles */
+form input, form textarea {
+    background-color: #f9f5f0;
+    border: 1px solid #d4a762;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #c39555;
+    box-shadow: 0 0 0 2px rgba(212, 167, 98, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f3e8d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d4a762;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c39555;
+}
